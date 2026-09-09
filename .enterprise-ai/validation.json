@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "profile_id": "demo-python-fastapi",
+  "python": "3.12",
+  "package": "enterprise_demo_api",
+  "health_path": "/health",
+  "coverage_minimum": 80,
+  "allowed_paths": ["src", "tests"],
+  "protected_paths": [
+    ".enterprise-ai",
+    ".github",
+    ".git",
+    ".flake8",
+    "pyproject.toml",
+    "requirements.lock",
+    "requirements-dev.lock"
+  ],
+  "commands": [
+    "V0", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8"
+  ]
+}
