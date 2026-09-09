@@ -1,0 +1,9 @@
+-r requirements.in
+bandit
+black
+flake8
+httpx2
+mypy
+pip-audit
+pytest
+pytest-cov
