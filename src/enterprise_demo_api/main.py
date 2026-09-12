@@ -15,3 +15,9 @@ def health() -> dict[str, str]:
 def delivery_status() -> dict[str, str]:
     """Expose the review handoff state for the demo."""
     return {"status": "human-review-required"}
+
+
+@app.get("/ready")
+def ready() -> dict[str, bool]:
+    """Report readiness status."""
+    return {"ready": True}
