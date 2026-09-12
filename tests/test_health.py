@@ -15,3 +15,10 @@ def test_delivery_status_requires_human_review() -> None:
 
     assert response.status_code == 200
     assert response.json() == {"status": "human-review-required"}
+
+
+def test_ready_reports_ok() -> None:
+    response = TestClient(app).get("/ready")
+
+    assert response.status_code == 200
+    assert response.json() == {"ready": True}
